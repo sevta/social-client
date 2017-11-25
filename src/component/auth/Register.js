@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { config } from '../../config'
 import Error from './Error'
+import { Link } from 'react-router-dom'
 
 class Register extends Component {
    constructor(props) {
@@ -24,13 +25,13 @@ class Register extends Component {
       this.setState({
          [e.target.name]: e.target.value,
          error: false
-      } , () => console.log(this.state))
+      })
    }
 
    register = e => {
       const { username , email , password , password2 } = this.state
       e.preventDefault()
-      axios.post(config.api('social/register') , {
+      axios.post(config.api('auth/register') , {
          username: username,
          email: email,
          password: password,
@@ -82,6 +83,7 @@ class Register extends Component {
                         </div>
                         <div className="form-group">
                            <input type="submit" className="btn btn-primary" value='Register'/>
+                           <Link className='btn btn-info btn-sm' to='/login'>Login</Link>
                         </div>
                      </form>
                   </div>

@@ -1,0 +1,53 @@
+.btn-login {
+  background: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.container-login {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF512F;
+  background: -webkit-gradient(linear, left top, right top, from(#DD2476), to(#FF512F));
+  background: linear-gradient(to right, #DD2476, #FF512F); }
+  .container-login .login {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .container-login .login .login-form {
+      width: 23em;
+      background: transparent;
+      border-radius: 30px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: solid 1px white;
+      outline: none;
+      color: white;
+      padding-left: 2em;
+      margin-bottom: 1.3em; }
+      .container-login .login .login-form:last-child {
+        margin-bottom: 0; }
+      .container-login .login .login-form::-webkit-input-placeholder {
+        color: white; }
+      .container-login .login .login-form:-ms-input-placeholder {
+        color: white; }
+      .container-login .login .login-form::-ms-input-placeholder {
+        color: white; }
+      .container-login .login .login-form::placeholder {
+        color: white; }
